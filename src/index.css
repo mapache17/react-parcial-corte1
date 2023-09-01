@@ -10,8 +10,58 @@
     --dead: #D63D2E; /* color personaje 💀 */
     --font: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; /* fuente principal */
 }
-
+body {
+    background-color:var(--character-list-color);
+}
 .character-list {
-    /* ejemplo de uso de variables con css */
     background-color: var(--character-list-color);
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    padding-top: 100px; 
+}
+
+.card {
+    width: 400px;
+    display: flex;
+    height:140px;
+    margin: 8px; 
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--character-color);
+    border-radius: 10px;
+
+}
+img{
+    height: 140px;
+    border-radius: 10px 0px 0px 10px;
+}
+.text{
+    padding-left: 30px;
+}
+.bring{
+    margin-bottom: 20px;
+}
+.static{
+    color:var(--secondary-font-color);
+}
+
+h2 {
+    color: var(--primary-font-color);
+    font-family: 'Segoe UI';
+    font-size:17px;
+}
+
+p {
+    color: hsl(0, 0%, 100%, 0.75);
+    font-family: 'Helvetica';
+    font-size:12px;
+    line-height: 0.05;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
